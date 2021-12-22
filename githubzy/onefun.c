@@ -14,7 +14,10 @@ int fun(int x)
 
 int main()
 {
-	printf("%d", fun(13));
+	for(int i=1;i<100;i++)
+    {
+        if(i == fun(i)) printf("%d ",i);
+    }
 
 	return 0;
 }
